@@ -41,6 +41,20 @@
 </body>
 </html>
 
+#map {
+  width: 100%;
+  height: 80vh; /* ← これがないと地図は表示されない */
+}
+
+body {
+  margin: 0;
+}
+
+#map {
+  width: 100%;
+  height: 80vh;
+}
+
 // Leaflet の地図を初期化
 const map = L.map("map").setView([33.5597, 133.5311], 9);
 
